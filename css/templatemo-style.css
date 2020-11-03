@@ -4,11 +4,32 @@ Sentra Template
 
 https://templatemo.com/tm-518-sentra
 
+Modified by Teyden Nguyen
+
 */
 
 body {
   font: normal normal normal 20px/1.67em brandon-grot-w01-light,sans-serif;
   /* font-family: 'Open Sans', sans-serif; */
+}
+
+@font-face {
+  font-family: 'OwlCute';
+  src: url('../fonts/owl-cute-regular-400.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bollolo';
+  src: url('../fonts/bollolo-400.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ReallyFree';
+  src: url('../fonts/really-free-400.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 p {
@@ -40,28 +61,31 @@ p {
 .section-heading {
   text-align: left;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .section-heading h1 {
   margin-top: 0px;
-  font-size: 32px;
-  color: #232323;
+  font-size: 60px;
+  color: #333;
   display: inline-block;
   margin-right: 50px;
+  font-family: "ReallyFree";
+  line-height: 55px;
 }
 
 .section-heading em {
   font-style: normal;
   font-weight: 700;
   color: #91ab9d;
+  font-size: 115%;
 }
 
 .section-heading p {
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  color: #343434;
+  color: #545151;
   position: absolute;
   top: 12.5px;
 }
@@ -169,7 +193,7 @@ header {
 }
 
 .navbar-toggle span {
-  background-color: #232323;
+  background-color: #545151;
 }
 
 
@@ -250,7 +274,7 @@ header {
   display: inline-block;
   color: #333;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 5px;
   text-decoration: none!important;
   letter-spacing: 0.3px;
@@ -574,7 +598,7 @@ img.circle {
   text-align: center;
   line-height: 42px;
   background-color: #eee;
-  color: #232323;
+  color: #545151;
   font-size: 42px;
   transition: all 0.5s;
 }
@@ -585,6 +609,25 @@ img.circle {
 }
 
 /* Copy #story owl for #humans */
+#humans .owl-carousel {
+  top: 6px;
+}
+
+#humans .section-content .owl-carousel .owl-item {
+  width: 200px;
+  height: 200px;
+}
+#humans .section-content .owl-carousel .owl-item.active {
+  width: 1000px;
+  height: 1000px;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 #humans .owl-dots {
   margin-top: 40px;
 }
@@ -628,8 +671,8 @@ img.circle {
   display: inline-block;
   text-align: center;
   line-height: 42px;
-  background-color: #eee;
-  color: #232323;
+  background-color: #bad0c4;
+  color: #545151;
   font-size: 42px;
   transition: all 0.5s;
 }
@@ -693,7 +736,7 @@ img.circle {
   margin-bottom: 5px;
   font-size: 21px;
   font-weight: 600;
-  color: #232323;
+  color: #545151;
   letter-spacing: 0.5px;
 }
 
@@ -867,12 +910,11 @@ img.circle {
   display: block;
   text-align: center;
   text-decoration: none;
-  
   letter-spacing: 0.5px;
-  color: #232323;
-  font-size: 19px;
+  color: #545151;
+  font-size: 25px;
   line-height: 80px;
-  font-weight: 600;
+  font-weight: 200;
   transition: 0.5s;
 }
 
@@ -937,7 +979,7 @@ img.circle {
   margin-bottom: 5px;
   font-size: 21px;
   font-weight: 600;
-  color: #232323;
+  color: #545151;
   letter-spacing: 0.5px;
 }
 
@@ -1018,7 +1060,7 @@ img.circle {
 }
 
 #contact button:hover {
-  color: #232323;
+  color: #545151;
   background-color: #f4f4f4;
 }
 
