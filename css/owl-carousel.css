@@ -133,8 +133,8 @@
   opacity: 0;
   transition: opacity 400ms ease; }
 
-.owl-carousel .owl-item img.owl-lazy {
-  transform-style: preserve-3d; }
+/* .owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d; } */
 
 /*
  * 	Owl Carousel - Video Plugin

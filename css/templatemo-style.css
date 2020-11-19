@@ -33,7 +33,7 @@ body {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   color: #7a7a7a;
   line-height: 24px;
 }
@@ -496,7 +496,7 @@ img.circle {
 }
 
 .Modern-Slider .item-1 .image {
-  background-image: url(../img/slide_1.jpg);
+  background-image: url(../img/activities/cuteness/batting_lashes.gif);
 }
 
 .Modern-Slider .item-2 .image {
@@ -586,9 +586,9 @@ img.circle {
   outline: none;
 }
 
-#story .owl-nav .owl-prev span {
+/* #story .owl-nav .owl-prev span {
   margin-right: 10px;
-}
+} */
 
 #story .owl-nav .owl-next span, #story .owl-nav .owl-prev span {
   outline: none;
@@ -609,6 +609,10 @@ img.circle {
 }
 
 /* Copy #story owl for #humans */
+#humans .section-content.mobile {
+  display: none;
+}
+
 #humans .owl-carousel {
   top: 6px;
 }
@@ -620,12 +624,6 @@ img.circle {
 #humans .section-content .owl-carousel .owl-item.active {
   width: 1000px;
   height: 1000px;
-}
-
-.item img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 #humans .owl-dots {
@@ -652,7 +650,7 @@ img.circle {
 #humans .owl-nav {
   position: absolute;
   display: inline-block;
-  top: -110px;
+  top: -108px;
   right: 0;
 }
 
@@ -660,20 +658,17 @@ img.circle {
   outline: none;
 }
 
-#humans .owl-nav .owl-prev span {
-  margin-right: 10px;
-}
-
 #humans .owl-nav .owl-next span, #humans .owl-nav .owl-prev span {
   outline: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   text-align: center;
-  line-height: 42px;
+  /* line-height: 32px; */
   background-color: #bad0c4;
   color: #545151;
-  font-size: 42px;
+  font-size: 35px;
+  font-weight: 700;
   transition: all 0.5s;
 }
 
@@ -681,6 +676,52 @@ img.circle {
   background-color: #91ab9d;
   color: #fff;
 }
+
+
+/** OWL CAROUSEL MODS **/
+.owl-carousel .owl-item {
+  overflow: scroll;
+  max-height: 500px;
+}
+.owl-carousel .item .image {
+  width: 55%;
+}
+.owl-carousel .item .text-content {
+  position: absolute !important;
+  left: 57%;
+  top: 0;
+  width: 42%;
+  text-align: left;
+}
+.owl-carousel .item.two-thirds .image {
+  width: 70%;
+}
+.owl-carousel .item.two-thirds .text-content {
+  position: absolute !important;
+  left: 72%;
+  top: 0;
+  width: 27%;
+  text-align: left;
+}
+/* .owl-carousel .item.full-center .image {
+  width: 75%;
+}
+.owl-carousel .item.full-center .text-content {
+  position: absolute !important;
+  left: 72%;
+  top: 0;
+  width: 27%;
+  text-align: left;
+} */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  /* max-width: 375px;
+  max-height: 500px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /***/
 
@@ -690,14 +731,9 @@ img.circle {
   z-index: 10;
 }
 
-#story .item .image {
+/* #story .item .image {
   position: relative;
-}
-
-#story .item .image img {
-  width: 100%;
-  overflow: hidden;
-}
+} */
 
 #story .item .image .featured-button a {
   font-size: 13px;
@@ -891,7 +927,7 @@ img.circle {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  height: 90px;
+  height: 65px;
   width: 100%;
   background-color: #eee;
   border-bottom: 10px solid #91ab9d;
@@ -912,10 +948,11 @@ img.circle {
   text-decoration: none;
   letter-spacing: 0.5px;
   color: #545151;
-  font-size: 25px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 65px;
   font-weight: 200;
   transition: 0.5s;
+  font-family: 'ReallyFree';
 }
 
 #humans .tabs a:hover {
@@ -943,13 +980,13 @@ img.circle {
   clear:both;
 }
 
-#humans .tabgroup ul {
+.tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#humans .tabgroup ul li {
+.tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -957,23 +994,23 @@ img.circle {
   border-bottom: 1px solid #ddd;
 }
 
-#humans .tabgroup ul li:last-child {
+.tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#humans .tabgroup ul li img {
+.tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
 }
-#humans .tabgroup ul li .text-content {
+.tabgroup ul li .text-content {
   display: inline;
 }
 
-#humans .item .text-content h4 {
+.item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -983,16 +1020,20 @@ img.circle {
   letter-spacing: 0.5px;
 }
 
-#humans .item .text-content span {
+.item .text-content span {
   display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 100;
+  color: #525252;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
+  line-height: 26px;
+}
+.item .text-content p {
+  font-size: 16px;
 }
 
-#humans .item .text-content .accent-button {
+.item .text-content .accent-button {
   margin-top: 25px;
 }
 
